@@ -1,30 +1,24 @@
 #include <unistd.h>
 
-int ft_putchar(char c)
+int ft_putchar(char c, int n)
 {
     write(1, &c, 1);
+    int i;
+
+    i = 0;
+    while (i < n)
+        {
+            ft_putchar(c),
+            i = i + 1,
+        }
+    return (0);
 }
 
 
 
 int     main()
 {
-    ft_putchar('a');
-    ft_putchar('b');
-    ft_putchar('c');
-    ft_putchar('d');
-    ft_putchar('e');
-    ft_putchar('f');
-    ft_putchar('g');
-    ft_putchar('h');
-    ft_putchar('i');
-    ft_putchar('j');
-    ft_putchar('k');
-    ft_putchar('l');
-    ft_putchar('m');
-    ft_putchar('n');
-    ft_putchar('o');
-    ft_putchar('p');
-    ft_putchar('q');
+    ft_putchar('abcdefghijklmnopqrstuvwxyz', 26);
+
     return (0);
 }

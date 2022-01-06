@@ -1,24 +1,29 @@
 #include <unistd.h>
-
-int ft_putchar(char c, int n)
+#include <stdio.h>
+int ft_putchar(char c)
 {
-    write(1, &c, 1);
+     write(1, &c, 1);
+}
+
+void ft_print_alphabet(char c, int n)
+{
     int i;
 
     i = 0;
     while (i < n)
-        {
-            ft_putchar(c),
-            i = i + 1,
-        }
-    return (0);
-}
+    {
+        ft_putchar(c);
+        i = i +1;
+    }
+
+} 
 
 
 
 int     main()
 {
-    ft_putchar('abcdefghijklmnopqrstuvwxyz', 26);
+    ft_print_alphabet('a', 26);
+    ft_putchar('\n');
 
     return (0);
 }

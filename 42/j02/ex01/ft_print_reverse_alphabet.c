@@ -6,22 +6,21 @@ int ft_putchar(char c)
      return (0);
 }
 
-void ft_print_alphabet(void)
+void ft_print_reverse_alphabet(void)
 {
     char c;
 
-    c = 'a';
-    while (c <= 'z')
+    c = 'z';
+    while (c >= 'a')
     {
         ft_putchar(c);
-        c++;
-    }
-} 
-
+        c--;
+    }       
+}
 
 
 int     main()
 {
-    ft_print_alphabet();
-    return (0);
+    ft_print_reverse_alphabet();
+    return(0);
 }

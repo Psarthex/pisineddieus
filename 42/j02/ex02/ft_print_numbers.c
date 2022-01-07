@@ -2,26 +2,24 @@
 
 int ft_putchar(char c)
 {
-     write(1, &c, 1);
-     return (0);
+    write(1, &c, 1);
+    return (0);
 }
 
-void ft_print_alphabet(void)
+void ft_print_numbers(void)
 {
     char c;
 
-    c = 'a';
-    while (c <= 'z')
+    c = '0';
+    while (c <= '9')
     {
         ft_putchar(c);
         c++;
     }
-} 
-
-
+}
 
 int     main()
 {
-    ft_print_alphabet();
+    ft_print_numbers();
     return (0);
 }

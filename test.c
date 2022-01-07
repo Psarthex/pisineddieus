@@ -12,13 +12,13 @@ void ft_print_reverse_alphabet(void)
 
     c = 'z';
 
-         while (c < 'a');
-            {
-                ft_putchar(c);
-                c - 1;
-            }
+    while (c >= 'a')
+    {
+        ft_putchar(c);
+        c--;
+    }
         
-        ft_putchar('\n');
+    ft_putchar('\n');
         
 }
 

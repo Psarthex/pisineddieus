@@ -1,32 +1,31 @@
 #include <unistd.h>
-#include <stdio.h>
 
 int ft_putchar(char c)
 {
      write(1, &c, 1);
-     return(0)
+     return (0);
 }
 
-void ft_print_alphabet(void)
+void ft_print_reverse_alphabet(void)
 {
-    int i;
-    int n;
     char c;
 
-    i = 0;
-    while (i < n)
-    {
-        ft_putchar(c);
-        i = i +1;
-    }
+    c = 'z';
 
-} 
-
+         while (c < 'a');
+            {
+                ft_putchar(c);
+                c - 1;
+            }
+        
+        ft_putchar('\n');
+        
+}
 
 
 int     main()
 {
-    ft_print_alphabet();
+    ft_print_reverse_alphabet();
 
-    return (0);
+    return(0);
 }

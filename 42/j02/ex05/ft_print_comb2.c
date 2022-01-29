@@ -7,47 +7,70 @@ int ft_putchar(char c)
 }
 void ft_print_comb(void)
 {
-    char a;
-    char b;
-    char c;
-    char d;
+    int a;
+    int b;
 
-    a = '0';
-    b = '0';
-    c = '0';
-    d = '0';
-    while (a <= '9')
+    a = -1;
+    while (a++ < 98)
     {
-        while (b <= '9')
+        b = a;
+        while (b++ < 99)
         {
-            while (c <= '9')
+            ft_putchar('0' + (a / 10));
+            ft_putchar('0' + (a % 10));
+            ft_putchar(' ');
+            ft_putchar('0' + (b / 10));
+            ft_putchar('0' + (b % 10));
+            if (a != 98)
             {
-                while (d <= '9')
-                {
-                    ft_putchar(a);
-                    ft_putchar(b);
-                    ft_putchar(' ');
-                    ft_putchar(c);
-                    ft_putchar(d);
-                    if (a == '1')
-                        return;
-                    ft_putchar(',');
-                    ft_putchar(' ');
-                    d++;
-                }
-                c++;
-                d = c - 1;
+                ft_putchar(',');
+                ft_putchar(' ');
             }
-            b++;
-            c = b - 1;
-            d = c - 1;
         }
-        a++;
-        b = a - 1;
-        c = b - 1;
-        d = c - 1;
     }
 }
+//    char a;
+//   char b;
+//   char c;
+//   char d;
+
+//   a = '0';
+//   b = '0';
+//   c = '0';
+//   d = b + 1;
+//   while (a <= '9')
+//   {
+//       while (b <= '9')
+//       {
+//           while (c <= '9')
+//           {
+//               while (d <= '9')
+//               {
+//                   ft_putchar(a);
+//                   ft_putchar(b);
+//                   ft_putchar(' ');
+//                   ft_putchar(c);
+//                   ft_putchar(d);
+//                   if (a == '9' && b == '8' && c == '9' && d == '9')
+//                       return;
+//                   ft_putchar(',');
+//                   ft_putchar(' ');
+//                   d++;
+//
+//               }
+//               c++;
+//               d = b + 1;
+//          }
+//           b++;
+//           c = b + 1;
+//           d = c + 1;
+//       }
+//       a++;
+//       b = a + 1;
+//       c = b + 1;
+//       d = c + 1;
+// }
+// }
 
 int main()
 {

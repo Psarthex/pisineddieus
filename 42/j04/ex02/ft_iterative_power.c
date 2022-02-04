@@ -34,5 +34,6 @@ int main()
     printf("%d\n", ft_iterative_power(4,0));
     printf("%d\n", ft_iterative_power(4,1));
     printf("%d\n", ft_iterative_power(4,-4));
+    printf("%d\n", ft_iterative_power(4,-4));
     return (0);
 }

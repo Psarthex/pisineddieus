@@ -6,30 +6,29 @@ int     ft_sqrt(int nb)
     int i;                   // Je déclare un int i qui me sert de compteur et qui représente "un multiple"
 
     i = 1;                   // i = 1 car on veut multiplier plus tard
-    if (nb == 0 || nb == 1) // racine carrée de 0 = 0 | racine carrée de 1 = 1
+    if (nb == 0 || nb == 1)  // racine carrée de 0 = 0 | racine carrée de 1 = 1
     {
         return(nb);
     }
     if (nb < 0)              // si nb négatif
     {
-        return(0);            // retourne 0
+        return(0);           // retourne 0
     }
 
-    while(i * i < nb)         // tant que multiple * multiple est inf à nb
+    while(i * i < nb)        // tant que multiple * multiple est inf à nb
     {
-        i++;                // multiple +1 jusqu'à ce que multiple = nb
+        i++;                 // multiple +1 jusqu'à ce que multiple = nb
     } 
-                // On sort de la boucle quand i*i n'est plus strictement inf à nb
-    if (i * i == nb)        // On vérifie avec cette nouvelle valeur de i si i * i = nb
+                             // On sort de la boucle quand i*i n'est plus strictement inf à nb
+    if (i * i == nb)         // On vérifie avec cette nouvelle valeur de i si i * i = nb
     {
-        return(i);          // si c'est le cas on retourne la valeur i
+        return(i);           // si c'est le cas on retourne la valeur i
     }
 
-    else                // Autrement
+    else                     // Autrement
     {
-        return(0); // Si oui, on retourne 0 et on sort de ce merdier
+        return(0);           // Si oui, on retourne 0 et on sort de ce merdier
     }
-  //hors sujet: (i * i != nb) Sinon on vérifie si i*i est différent de nb
 }
 
 int main()
